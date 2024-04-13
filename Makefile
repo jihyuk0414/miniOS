@@ -9,6 +9,7 @@ TARGET=minios
 
 # Source, Object files
 SRCS=kernel/20192628/kerneljihyuk.c kernel/system.c kernel/20192628/ipc.c kernel/kernel.c
+
 OBJS=$(SRCS:.c=.o) 
 
 # Include directory
