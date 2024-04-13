@@ -5,3 +5,8 @@ void minisystem()
 {
     printf("minisystem\n");
 }
+
+void jihyukmade()
+{
+    printf("made by jihyuk\n");
+}

@@ -5,6 +5,7 @@
 #include <readline/history.h>
 
 #include "system.h"
+
 void print_minios(char* str);
 
 int main() {
@@ -22,6 +23,14 @@ int main() {
 
         if (strcmp(input,"minisystem") == 0){
             minisystem();
+        }
+
+        if (strcmp(input,"jihyukmade") == 0){
+            jihyukmade();
+        }
+        if (strcmp(input,"ipc") == 0 )
+        {
+            ipc();
         }
         else system(input);
     }
