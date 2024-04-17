@@ -26,14 +26,17 @@ int main() {
         if (strcmp(input,"jihyukmade") == 0){
             jihyukmade();
         }
+
         if (strcmp(input,"ipc") == 0 )
         {
             ipc();
         }
+
         if (strcmp(input,"calculatepi") == 0 )
         {
             calculatepi();
         }
+
         else system(input);
     }
 
