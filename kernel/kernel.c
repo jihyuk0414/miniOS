@@ -5,13 +5,12 @@
 #include <readline/history.h>
 
 #include "system.h"
+
 void print_minios(char* str);
 
 int main() {
     print_minios("[MiniOS SSU] Hello, World!");
-
     char *input;
-
     while(1) {
         // readline을 사용하여 입력 받기
         input = readline("커맨드를 입력하세요(종료:exit) : ");
@@ -22,6 +21,18 @@ int main() {
 
         if (strcmp(input,"minisystem") == 0){
             minisystem();
+        }
+
+        if (strcmp(input,"jihyukmade") == 0){
+            jihyukmade();
+        }
+        if (strcmp(input,"ipc") == 0 )
+        {
+            ipc();
+        }
+        if (strcmp(input,"calculatepi") == 0 )
+        {
+            calculatepi();
         }
         else system(input);
     }
