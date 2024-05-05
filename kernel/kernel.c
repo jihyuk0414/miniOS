@@ -14,7 +14,6 @@ typedef struct {
     int remaining_time;
 } Process;
 
-
 void print_minios(char* str);
 
 int main() {
@@ -35,14 +34,17 @@ int main() {
         if (strcmp(input,"jihyukmade") == 0){
             jihyukmade();
         }
+
         if (strcmp(input,"ipc") == 0 )
         {
             ipc();
         }
+
         if (strcmp(input,"calculatepi") == 0 )
         {
             calculatepi();
         }
+
         if (strcmp(input, "process") ==0 )
         {
             Process processes[MAX_PROCESS] = {
@@ -58,6 +60,7 @@ int main() {
 
             return 0;
         }
+
         else system(input);
     }
 
